@@ -4,283 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        .box1{
-            width: 497.1px;
-            height: 120px;
-            border: 3px dotted #000;
-            position: relative;
+        .container {
+        justify-content: space-between;
+        align-items: center;
+        border: 3px dotted #000;
+        display: inline-block;
+
         }
 
-        .box11{
-            height: 120px;
-            width: 120px;
+        .red-box {
+            height: 100px;
+            width: 100px;
             background-color: red;
-            position: absolute;
-            transform: translate(0%, 0%);
-            top: 61px;
-            left: 10px;
+            display: inline-block;
         }
 
-        .box12{
-            height: 120px;
-            width: 120px;
+        .green-box {
+            height: 100px;
+            width: 100px;
             background-color: green;
-            position: absolute;
-            transform: translate(0%, 0%);
-            top: 61px;
-            left: 135px;
+            display: inline-block;
+            
         }
 
-        .box13{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(0%, 0%);
-            top: 61px;
-            left: 260px;
-        }
-
-        .box14{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(0%, 0%);
-            top: 61px;
-            left: 386px;
-        }
-
-        .text1{
-            position: absolute;
-            top: 60px;
-            left: 10px;
-            font-size: 20px;
-
-        }
-
-        .text12{
-            position: absolute;
-            top: 60px;
-            left: 135px;
-            font-size: 20px;
-
-        }
-
-        .text13{
-            position: absolute;
-            top: 60px;
-            left: 260px;
-            font-size: 20px;
-
-        }
-
-        .text14{
-            position: absolute;
-            top: 60px;
-            left: 386px;
-            font-size: 20px;
-
-        }
-
-        .box2{
-            width: 497.1px;
-            height: 120px;
-            border: 3px dotted #000;
-            position: relative;
-        }
-
-        .box21{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(1%, 70%);
-            top: 199px;
-            left: 10px;
-        }
-
-        .box22{
-            height: 120px;
-            width: 120px;
-            background-color: green;
-            position: absolute;
-            transform: translate(20%, 200%);
-            top: 65px;
-            left: 135px;
-            z-index: 1
-        }
-
-        .box23{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(1%, 185%);
-            top: 61px;
-            left: 260px;
-        }
-
-        .box24{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(1%, 185%);
-            top: 61px;
-            left: 386px;
-        }
-
-        .text2{
-            position: absolute;
-            top: 282px;
-            left: 10px;
-            font-size: 20px;
-
-        }
-
-        .text22{
-            position: absolute;
-            top: 306px;
-            left: 166px;
-            font-size: 20px;
-            z-index: 1
-
-        }
-
-        .text23{
-            position: absolute;
-            top: 282px;
-            left: 260px;
-            font-size: 20px;
-
-        }
-
-        .text24{
-            position: absolute;
-            top: 282px;
-            left: 388px;
-            font-size: 20px;
-
-        }
-
-        .box3{
-            width: 370px;
-            height: 120px;
-            border: 3px dotted #000;
-            position: relative;
-        }
-
-        .box31{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(0%, 256%);
-            top: 199px;
-            left: 10px;
-        }
-
-        .box32{
-            height: 120px;
-            width: 120px;
-            background-color: green;
-            position: absolute;
-            transform: translate(0%, 368%);
-            top: 77px;
-            left: 25px;
-            z-index: 1
-        }
-
-        .box33{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(0%, 371%);
-            top: 61px;
-            left: 135px;
-        }
-
-        .box34{
-            height: 120px;
-            width: 120px;
-            background-color: red;
-            position: absolute;
-            transform: translate(0%, 371%);
-            top: 61px;
-            left: 260px;
-        }
-
-        .text3{
-            position: absolute;
-            top: 501px;
-            left: 10px;
-            font-size: 20px;
-
-        }
-
-        .text32{
-            position: absolute;
-            top: 520px;
-            left: 30px;
-            font-size: 20px;
-            z-index: 1
-
-        }
-
-        .text33{
-            position: absolute;
-            top: 505px;
-            left: 145px;
-            font-size: 20px;
-            z-index: 1
-
-        }
-
-        .text34{
-            position: absolute;
-            top: 505px;
-            left: 269px;
-            font-size: 20px;
-
-        }
     </style>
 </head>
 <body>
-    <h3>poition: static</h3>
-    <div class="box1"></div>
-        <div class="box11"></div>
-            <div class="text1">One</div>
-        <div class="box12"></div>
-            <div class="text12">Two</div>
-        <div class="box13"></div>
-            <div class="text13">Three</div>
-        <div class="box14"></div>
-            <div class="text14">Four</div><br><br>
+    <h3>position : static</h3>
+    <div class="container">
+        <div class="red-box">One</div>
+        <div class="green-box">Two</div>
+        <div class="red-box">Three</div>
+        <div class="red-box">Four</div>
+    </div>
 
-    <h3>poition: relative</h3>
-    <div class="box2"></div>
-        <div class="box21"></div>
-            <div class="text2">One</div>
-        <div class="box22"></div>
-            <div class="text22">Two</div>
-        <div class="box23"></div>
-            <div class="text23">Three</div>
-        <div class="box24"></div>
-            <div class="text24">Four</div><br><br>
-    
-    <h3>poition: absolute</h3>
-    <div class="box3"></div>
-        <div class="box31"></div>
-            <div class="text3">One</div>
-        <div class="box32"></div>
-            <div class="text32">Two</div>
-        <div class="box33"></div>
-            <div class="text33">Three</div>
-        <div class="box34"></div>
-            <div class="text34">Four</div><br><br>
+    <h3>position : relative</h3>
+    <div class="container">
+        <div class="red-box">One</div>
+        <div class="green-box" style="position: relative;top: 10px; left: 10px;">Two</div>
+        <div class="red-box">Three</div>
+        <div class="red-box">Four</div>
+    </div>
+
+    <h3>position : absolute</h3>
+    <div class="container" style="position: relative;">
+        <div class="red-box">One</div>
+        <div class="green-box" style="position: absolute; top:10px; right: 200px;">Two</div>
+        <div class="red-box">Three</div>
+        <div class="red-box">Four</div>
+    </div>
 </body>
 </html>
