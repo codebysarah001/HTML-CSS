@@ -20,7 +20,6 @@
             box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
         }
 
         .button{
@@ -42,24 +41,17 @@
         .main2{
             background-color: rgb(43, 41, 41);
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-            align-content: center;
-            width: 100%;
-            height: 600px;
+            text-align: center;
+            flex-wrap: wrap;    
+            justify-content: space-around;
+        
         }
 
         .card{
             background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width: 300px;
             text-align: center;
-            height: 80%;
-            width: 30%;
+            margin:15px ;
         }
 
         .main3{
@@ -88,6 +80,21 @@
             background-color: rgb(42, 42, 42);
         }
 
+        .footer2{
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 25px;
+
+        }
+
+        @media screen and (max-width:426px){
+            .footer{
+                flex-direction: column;
+            }
+
+        }
+
     </style>
 </head>
 <body>
@@ -107,20 +114,20 @@
 
     <div class="main2">
         <div class="card">
-            <img src="images/flatlay-person-hands-working-laptop-computer-aesthetic-bohemian-home-office-workspace-work-home-notebook-pampas-grass-sunlight-shadow-table-flat-lay-top-view_408798-10373.avif" width="100%" height="190px" style="vertical-align: auto;">
+            <img src="images/flatlay-person-hands-working-laptop-computer-aesthetic-bohemian-home-office-workspace-work-home-notebook-pampas-grass-sunlight-shadow-table-flat-lay-top-view_408798-10373.avif" width="100%" height="40%" style="vertical-align: auto;">
             <br>
             <b>Why Responsive ?</b>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
         </div>
         <div class="card">
-            <img src="images/flatlay-person-hands-working-laptop-computer-aesthetic-home-office-workspace-work-home-glass-water-stationery-flat-lay-top-view_408798-10999.avif" width="100%" height="190px" style="vertical-align: auto;">
+            <img src="images/flatlay-person-hands-working-laptop-computer-aesthetic-home-office-workspace-work-home-glass-water-stationery-flat-lay-top-view_408798-10999.avif" width="100%" height="40%" style="vertical-align: auto;">
             <br>
             <b>Same Experience Everywhere</b>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
         <div class="card">
-            <img src="images/flatlay-person-hands-working-laptop-computer-aesthetic-bohemian-home-office-workspace-work-home-notebook-dried-grass-warm-sunlight-shadow-linen-cloth-flat-lay-top-view_408798-11651.avif" width="100%" height="190px" style="vertical-align:auto;">
+            <img src="images/flatlay-person-hands-working-laptop-computer-aesthetic-bohemian-home-office-workspace-work-home-notebook-dried-grass-warm-sunlight-shadow-linen-cloth-flat-lay-top-view_408798-11651.avif" width="100%" height="40%" style="vertical-align:auto;">
             <br>
             <b>Improve Your Accessibility</b>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -136,16 +143,21 @@
     <div class="footer">
         <div class="box-1">
             <h3 class="heading">Contact Us</h3>
-            <p style="text-align: center; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis eligendi ad nulla optio, unde dicta illo quae deserunt cupiditate 
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis eligendi ad nulla optio, unde dicta illo quae deserunt cupiditate 
                 fugit ipsa, pariatur labore ipsum consequatur quas odit adipisci iste!?</p>
             <p>sarahshorman001@gmail.com</p>
         </div>
         <div class="box-2">
             <h3 class="heading">About Us</h3>
-            <p style="text-align: center; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis eligendi ad nulla optio, unde dicta illo quae deserunt cupiditate 
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis eligendi ad nulla optio, unde dicta illo quae deserunt cupiditate 
                 fugit ipsa, pariatur labore ipsum consequatur quas odit adipisci iste!?</p>
             <a href="https://www.w3schools.com/html/html_responsive.asp">Responsive</a>
         </div>
+    </div>
+
+    <div class="footer2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione modi quasi, error repellendus quod. <a href="https://www.w3schools.com/html/html_responsive.asp">Responsive Development</a> </p>
+
     </div>
 </body>
 </html>
